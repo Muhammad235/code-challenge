@@ -22,6 +22,7 @@ main{
     display: flex;
     flex-direction: row;
     height: 95vh;
+    /* gap: 2rem; */
 }
 
 
@@ -43,18 +44,54 @@ main{
     width: 34px;
 }
 
-.main-section .left .images .sec1{
-    margin-top: 50px;
-    height: 230px;
-    width: 52px;
+
+.main-section .left .images .appNav, .appNav2{
     border-radius: 32px;
     background-color: var(--dark-alt);
-    justify-content: center;
+    gap: 20px;
     text-align: center;
     align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
+.main-section .left .images .appNav{
+    margin-top: 40px;
+    height: 230px;
+    width: 52px;
+}
+
+.main-section .left .images .appNav2{
+    margin-top: 2rem;
+    height: 127px;
+    width: 52px;
+}
+
+.main-section .left .images .appNav2 img{
+    margin-top: 20px;
+}
+
+
+/* right content */
 .main-section .right{
     border: 2px solid green;
     width: 1210px;
+}
+
+.main-section .right .input-search{
+    height: 73px;
+    width: 1122px;
+    background: #1D2123;   
+    border: none; 
+}
+
+.main-section .right .hero-container{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+.main-section .right .hero-container .top-charts{
+    border: 2px yellow solid;
+    height: 370px;
+    width: 420px;
 }
